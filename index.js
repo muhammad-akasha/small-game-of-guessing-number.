@@ -32,10 +32,14 @@ while (userInput !== gameNum) {
      if (attempt === 9) {
         alert("This Is Last Chance To Guess A Number");
 
-    }
+    if (userInput === gameNum) {
+        alert("Correct! You win a watch that you will never get.");
+       
+       break}
     if (attempt === 10) {
         alert("You've used all your attempts. The correct number was " + gameNum + ".");
         break;
     }
    
+}
 }
